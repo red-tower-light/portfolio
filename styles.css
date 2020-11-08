@@ -34,25 +34,11 @@ header {
   justify-content: center;
 }
 
-.cards, nav {
-  width: 60%;
-  max-width: 1500px;
-}
-@media (max-width: 705px) {
-  .cards, nav {
-    width: 90%;
-  }
-}
-
 nav {
   border: 1px solid blue;
-  height: fit-content;
-  margin: 20px;
-  display: grid;
-  grid-column-gap: auto;
-  grid-row-gap: 20px;
-  grid-template-columns: auto auto auto auto;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
 }
 nav div {
   box-shadow: -15px 15px 30px -15px #FFF6E2;
