@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+$card-color: black #211215;
+$text-color: #FFF6E2;
+$shadow: -15px 15px 30px -15px $text-color;
+
+
+* {
+  font-family: Raleway;
+}
+
+body {
+  background-color: black;
+  // width: 100%;
+  // position: absolute;
+  // z-index: 0;
+}
+
+#window {
+  position: static;
+  height: 25vh;
+  width: 100%;
+}
+
+header {
+  @extend #window;
+  background-image: url('img/headerE.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  // z-index: 0;
+}
+
+.filter {
+  backdrop-filter: blur(10px);
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%content_width {
+  width: 60%;
+  max-width: 1500px;
+
+  @media (max-width: 705px) {
+    width: 90%;
+  }
+}
+
+nav {
+  border: 1px solid blue;
+
+  @extend %content_width;
+  height: fit-content;
+  margin: 20px;
+  display: grid;
+  grid-column-gap: auto;
+  grid-row-gap: 20px;
+  grid-template-columns: auto auto auto auto; 
+
+  justify-content: space-around;
+
+  div {
+    box-shadow: $shadow;
+    width: 100px;
+    height: 55px;
+    padding: 5px;
+    border: 1px solid $text-color;
+
+    text-align: center;
+  }
+
+  a {
+    color: $text-color;
+    font-size: small;
+  }
+}
+
+#linkdin, #github {
+  width: 25px;
+}
+
+.cards {
+  @extend %content_width;
+}
