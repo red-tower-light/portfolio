@@ -2,19 +2,24 @@
 
 
 $card-color: black #211215;
-$text-color: #FFF6E2;
+$text-color: #ecf0f1;
 $shadow: -15px 15px 30px -15px $text-color;
 
 
 * {
     font-family: Raleway;
+    list-style: none;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: black;
-    // width: 100%;
-    // position: absolute;
-    // z-index: 0;
+      background-color: black;
+      // width: 100%;
+      // position: absolute;
+      // z-index: 0;
 }
 
 #window {
@@ -39,14 +44,42 @@ header {
 
 .filter {
     backdrop-filter: blur(2px);
-}
-
-.center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 0;
 }
 
 nav {
+  border-bottom: 1px solid $text-color;
+  box-shadow: $shadow;
+  backdrop-filter: blur(20px);
+  
   display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  li {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 20px;
+    padding-top: 10px;
+
+    a {
+      color: $text-color;
+      transition: all 0.3s ease 0s;
+    }
+
+    a:hover {
+      color: #af5d5d;
+      text-decoration: none;
+    }
+  }
+}
+
+#linkdin, #github {
+  width: 15px;
+}
+
+h1 {
+  color: $text-color;
 }

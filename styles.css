@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 * {
   font-family: Raleway;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -26,16 +30,40 @@ header {
 
 .filter {
   backdrop-filter: blur(2px);
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 0;
 }
 
 nav {
+  border-bottom: 1px solid #ecf0f1;
+  box-shadow: -15px 15px 30px -15px #ecf0f1;
+  backdrop-filter: blur(20px);
   display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 20px;
+  padding-top: 10px;
+}
+nav li a {
+  color: #ecf0f1;
+  transition: all 0.3s ease 0s;
+}
+nav li a:hover {
+  color: #af5d5d;
+  text-decoration: none;
+}
+
+#linkdin, #github {
+  width: 15px;
+}
+
+h1 {
+  color: #ecf0f1;
 }
 
 /*# sourceMappingURL=styles.css.map */
