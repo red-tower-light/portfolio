@@ -64,6 +64,12 @@ nav {
     justify-content: space-between;
     margin: 50px;
 
+    @media (max-width: 700px) {
+        width: 90%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
     div {
         box-shadow: $shadow;
         width: 100px;
