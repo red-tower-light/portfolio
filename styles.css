@@ -25,43 +25,13 @@ header {
 }
 
 .filter {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
 }
 
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-nav {
-  border: 1px solid blue;
-  display: flex;
-  justify-content: space-between;
-  margin: 50px;
-}
-@media (max-width: 700px) {
-  nav {
-    width: 90%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-  }
-}
-nav div {
-  box-shadow: -15px 15px 30px -15px #FFF6E2;
-  width: 100px;
-  height: 55px;
-  padding: 5px;
-  border: 1px solid #FFF6E2;
-  text-align: center;
-}
-nav a {
-  color: #FFF6E2;
-  font-size: small;
-}
-
-#linkdin, #github {
-  width: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

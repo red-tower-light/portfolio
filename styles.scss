@@ -38,7 +38,7 @@ header {
 }
 
 .filter {
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
 }
 
 .center {
@@ -47,49 +47,3 @@ header {
     justify-content: center;
 }
 
-%content_width {
-    width: 60%;
-    max-width: 1500px;
-
-    @media (max-width: 705px) {
-        width: 90%;
-    }
-}
-
-nav {
-    border: 1px solid blue;
-
-    // @extend %content_width;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px;
-
-    @media (max-width: 700px) {
-        width: 90%;
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-    }
-
-    div {
-        box-shadow: $shadow;
-        width: 100px;
-        height: 55px;
-        padding: 5px;
-        border: 1px solid $text-color;
-
-        text-align: center;
-    }
-
-    a {
-        color: $text-color;
-        font-size: small;
-    }
-}
-
-#linkdin, #github {
-    width: 25px;
-}
-
-// .cards {
-//     @extend %content_width;
-// }
