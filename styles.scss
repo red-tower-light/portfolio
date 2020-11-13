@@ -63,7 +63,7 @@ nav {
     text-align: center;
     padding: 0px 20px;
 
-    @media (max-width: 2.64in) {
+    @media only screen and (max-device-width: 480px) {
       padding: 0px 5px;
     }
 
