@@ -61,8 +61,11 @@ nav {
   li {
     display: inline-block;
     text-align: center;
-    padding: 0px 10px;
-    padding-top: 0px;
+    padding: 0px 20px;
+
+    @media (max-width: 2.64in) {
+      padding: 0px 5px;
+    }
 
     a {
       color: $text-color;
