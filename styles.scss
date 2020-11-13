@@ -88,6 +88,16 @@ nav {
   z-index: 2;
 }
 
+#feature {
+  margin: 40px;
+  border: 1px solid $text-color;
+  color: $text-color;
+}
+
+.cardimg {
+  width: 100%;
+}
+
 #linkdin, #github {
   width: 15px;
 }

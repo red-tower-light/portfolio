@@ -72,6 +72,16 @@ nav li a:hover {
   z-index: 2;
 }
 
+#feature {
+  margin: 40px;
+  border: 1px solid #ecf0f1;
+  color: #ecf0f1;
+}
+
+.cardimg {
+  width: 100%;
+}
+
 #linkdin, #github {
   width: 15px;
 }
