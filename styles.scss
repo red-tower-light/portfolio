@@ -76,6 +76,11 @@ nav {
   }
 }
 
+#main {
+  position: relative;
+  z-index: 2;
+}
+
 #linkdin, #github {
   width: 15px;
 }
