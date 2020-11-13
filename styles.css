@@ -67,14 +67,19 @@ nav li a:hover {
   text-decoration: none;
 }
 
+.filter > div {
+  height: 50px;
+}
+
 #main {
   position: relative;
   z-index: 2;
 }
 
-#feature {
-  margin: 40px;
-  border: 1px solid #ecf0f1;
+.sub-card, #feature {
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ecf0f1;
+  box-shadow: 0px 15px 30px -15px #ecf0f1;
   color: #ecf0f1;
 }
 

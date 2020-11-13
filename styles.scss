@@ -83,19 +83,32 @@ nav {
   }
 }
 
+.filter > div {
+  height: 50px;
+}
+
 #main {
   position: relative;
   z-index: 2;
 }
 
-#feature {
-  margin: 40px;
-  border: 1px solid $text-color;
+%card {
+  margin-bottom: 50px;
+  border-bottom: 1px solid $text-color;
+  box-shadow: $shadow;
   color: $text-color;
 }
 
 .cardimg {
   width: 100%;
+}
+
+#feature {
+  @extend %card;
+}
+
+.sub-card {
+  @extend %card;
 }
 
 #linkdin, #github {
