@@ -77,7 +77,7 @@ nav {
     }
 
     a:hover {
-      color: #af5d5d;
+      color: #ff4646;
       text-decoration: none;
     }
   }
@@ -92,30 +92,23 @@ nav {
   z-index: 2;
 }
 
-%card {
+.cards {
   margin-bottom: 50px;
   border-bottom: 1px solid $text-color;
   box-shadow: $shadow;
-  color: $text-color;
   padding: 10px;
+
+  p {
+    color: $text-color;
+  }
+  
 }
 
 .cardimg {
   width: 100%;
 }
 
-#feature {
-  @extend %card;
-}
+#contact {
+  @extend .cards;
 
-.sub-card {
-  @extend %card;
-}
-
-#linkdin, #github {
-  width: 15px;
-}
-
-h1 {
-  color: $text-color;
 }

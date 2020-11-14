@@ -63,7 +63,7 @@ nav li a {
   transition: all 0.3s ease 0s;
 }
 nav li a:hover {
-  color: #af5d5d;
+  color: #ff4646;
   text-decoration: none;
 }
 
@@ -76,24 +76,18 @@ nav li a:hover {
   z-index: 2;
 }
 
-.sub-card, #feature {
+.cards, #contact {
   margin-bottom: 50px;
   border-bottom: 1px solid #ecf0f1;
   box-shadow: 0px 18px 10px -15px #ecf0f1;
-  color: #ecf0f1;
   padding: 10px;
+}
+.cards p, #contact p {
+  color: #ecf0f1;
 }
 
 .cardimg {
   width: 100%;
-}
-
-#linkdin, #github {
-  width: 15px;
-}
-
-h1 {
-  color: #ecf0f1;
 }
 
 /*# sourceMappingURL=styles.css.map */
